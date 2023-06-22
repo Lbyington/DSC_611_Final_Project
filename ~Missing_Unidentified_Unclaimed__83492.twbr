@@ -1,0 +1,3418 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.22.0624.2136                               -->
+<workbook original-version='18.1' source-build='2022.2.0 (20222.22.0624.2136)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.Layers.true...Layers />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelRelationshipPerfOptions.true...ObjectModelRelationshipPerfOptions />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='CapStoneData' inline='true' name='federated.1mps8k10j498li12qeon01qit4zu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='commander-data.local' name='postgres.0g6tud9172ixfy12jwte40fxhbl7'>
+            <connection authentication='username-password' class='postgres' dbname='CapStoneData' one-time-sql='' port='5432' server='commander-data.local' username='lacey_b' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='postgres.0g6tud9172ixfy12jwte40fxhbl7' name='US_Missing_Person' table='[public].[US_Missing_Person]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='postgres.0g6tud9172ixfy12jwte40fxhbl7' name='US_Population_Year_Gender' table='[public].[US_Population_Year_Gender]' type='table' />
+          <relation connection='postgres.0g6tud9172ixfy12jwte40fxhbl7' name='US_Missing_Person' table='[public].[US_Missing_Person]' type='table' />
+          <relation connection='postgres.0g6tud9172ixfy12jwte40fxhbl7' name='US_Population_Year_Race' table='[public].[US_Population_Year_Race]' type='table' />
+          <relation connection='postgres.0g6tud9172ixfy12jwte40fxhbl7' name='US_Unclaimed_Persons' table='[public].[US_Unclaimed_Persons]' type='table' />
+          <relation connection='postgres.0g6tud9172ixfy12jwte40fxhbl7' name='US_Unidentified_Persons' table='[public].[US_Unidentified_Persons]' type='table' />
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[AmericanIndianAlaskanNative]' value='[US_Population_Year_Race].[AmericanIndianAlaskanNative]' />
+          <map key='[AsianPacificIslander]' value='[US_Population_Year_Race].[AsianPacificIslander]' />
+          <map key='[Asian]' value='[US_Population_Year_Race].[Asian]' />
+          <map key='[Black]' value='[US_Population_Year_Race].[Black]' />
+          <map key='[CaseNumber (US_Unclaimed_Persons)]' value='[US_Unclaimed_Persons].[CaseNumber]' />
+          <map key='[CaseNumber (US_Unidentified_Persons)]' value='[US_Unidentified_Persons].[CaseNumber]' />
+          <map key='[CaseNumber]' value='[US_Missing_Person].[CaseNumber]' />
+          <map key='[City (US_Unclaimed_Persons)]' value='[US_Unclaimed_Persons].[City]' />
+          <map key='[City (US_Unidentified_Persons)]' value='[US_Unidentified_Persons].[City]' />
+          <map key='[City]' value='[US_Missing_Person].[City]' />
+          <map key='[County (US_Unclaimed_Persons)]' value='[US_Unclaimed_Persons].[County]' />
+          <map key='[County (US_Unidentified_Persons)]' value='[US_Unidentified_Persons].[County]' />
+          <map key='[County]' value='[US_Missing_Person].[County]' />
+          <map key='[DateBodyFound (US_Unidentified_Persons)]' value='[US_Unidentified_Persons].[DateBodyFound]' />
+          <map key='[DateBodyFound]' value='[US_Unclaimed_Persons].[DateBodyFound]' />
+          <map key='[DateLastContact]' value='[US_Missing_Person].[DateLastContact]' />
+          <map key='[Female]' value='[US_Population_Year_Gender].[Female]' />
+          <map key='[Hispanic]' value='[US_Population_Year_Race].[Hispanic]' />
+          <map key='[LowerAge (US_Unidentified_Persons)]' value='[US_Unidentified_Persons].[LowerAge]' />
+          <map key='[LowerAge]' value='[US_Missing_Person].[LowerAge]' />
+          <map key='[Male]' value='[US_Population_Year_Gender].[Male]' />
+          <map key='[MissingAge]' value='[US_Missing_Person].[MissingAge]' />
+          <map key='[MonthBodyFound (US_Unidentified_Persons)]' value='[US_Unidentified_Persons].[MonthBodyFound]' />
+          <map key='[MonthBodyFound]' value='[US_Unclaimed_Persons].[MonthBodyFound]' />
+          <map key='[MonthLastContact]' value='[US_Missing_Person].[MonthLastContact]' />
+          <map key='[NativeHawaiianAlaskanNative]' value='[US_Population_Year_Race].[NativeHawaiianAlaskanNative]' />
+          <map key='[Race (US_Unclaimed_Persons)]' value='[US_Unclaimed_Persons].[Race]' />
+          <map key='[Race (US_Unidentified_Persons)]' value='[US_Unidentified_Persons].[Race]' />
+          <map key='[Race]' value='[US_Missing_Person].[Race]' />
+          <map key='[Sex (US_Unclaimed_Persons)]' value='[US_Unclaimed_Persons].[Sex]' />
+          <map key='[Sex (US_Unidentified_Persons)]' value='[US_Unidentified_Persons].[Sex]' />
+          <map key='[Sex]' value='[US_Missing_Person].[Sex]' />
+          <map key='[State (US_Unclaimed_Persons)]' value='[US_Unclaimed_Persons].[State]' />
+          <map key='[State (US_Unidentified_Persons)]' value='[US_Unidentified_Persons].[State]' />
+          <map key='[State]' value='[US_Missing_Person].[State]' />
+          <map key='[TotalPopulation]' value='[US_Population_Year_Race].[TotalPopulation]' />
+          <map key='[TwoOrMoreRaces]' value='[US_Population_Year_Race].[TwoOrMoreRaces]' />
+          <map key='[UpperAge (US_Unidentified_Persons)]' value='[US_Unidentified_Persons].[UpperAge]' />
+          <map key='[UpperAge]' value='[US_Missing_Person].[UpperAge]' />
+          <map key='[White]' value='[US_Population_Year_Race].[White]' />
+          <map key='[Year (US_Population_Year_Race)]' value='[US_Population_Year_Race].[Year]' />
+          <map key='[YearBodyFound (US_Unidentified_Persons)]' value='[US_Unidentified_Persons].[YearBodyFound]' />
+          <map key='[YearBodyFound]' value='[US_Unclaimed_Persons].[YearBodyFound]' />
+          <map key='[YearLastContact]' value='[US_Missing_Person].[YearLastContact]' />
+          <map key='[Year]' value='[US_Population_Year_Gender].[Year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[US_Population_Year_Gender]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>false</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Female</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Female]</local-name>
+            <parent-name>[US_Population_Year_Gender]</parent-name>
+            <remote-alias>Female</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Male</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Male]</local-name>
+            <parent-name>[US_Population_Year_Gender]</parent-name>
+            <remote-alias>Male</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CaseNumber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CaseNumber]</local-name>
+            <parent-name>[US_Missing_Person]</parent-name>
+            <remote-alias>CaseNumber</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>false</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DateLastContact</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DateLastContact]</local-name>
+            <parent-name>[US_Missing_Person]</parent-name>
+            <remote-alias>DateLastContact</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MonthLastContact</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MonthLastContact]</local-name>
+            <parent-name>[US_Missing_Person]</parent-name>
+            <remote-alias>MonthLastContact</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearLastContact</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[YearLastContact]</local-name>
+            <parent-name>[US_Missing_Person]</parent-name>
+            <remote-alias>YearLastContact</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LowerAge</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[LowerAge]</local-name>
+            <parent-name>[US_Missing_Person]</parent-name>
+            <remote-alias>LowerAge</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UpperAge</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[UpperAge]</local-name>
+            <parent-name>[US_Missing_Person]</parent-name>
+            <remote-alias>UpperAge</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MissingAge</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[MissingAge]</local-name>
+            <parent-name>[US_Missing_Person]</parent-name>
+            <remote-alias>MissingAge</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[US_Missing_Person]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County]</local-name>
+            <parent-name>[US_Missing_Person]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[US_Missing_Person]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sex]</local-name>
+            <parent-name>[US_Missing_Person]</parent-name>
+            <remote-alias>Sex</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Race]</local-name>
+            <parent-name>[US_Missing_Person]</parent-name>
+            <remote-alias>Race</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Year (US_Population_Year_Race)]</local-name>
+            <parent-name>[US_Population_Year_Race]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>false</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalPopulation</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalPopulation]</local-name>
+            <parent-name>[US_Population_Year_Race]</parent-name>
+            <remote-alias>TotalPopulation</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>White</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[White]</local-name>
+            <parent-name>[US_Population_Year_Race]</parent-name>
+            <remote-alias>White</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Black</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Black]</local-name>
+            <parent-name>[US_Population_Year_Race]</parent-name>
+            <remote-alias>Black</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AsianPacificIslander</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AsianPacificIslander]</local-name>
+            <parent-name>[US_Population_Year_Race]</parent-name>
+            <remote-alias>AsianPacificIslander</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Asian</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Asian]</local-name>
+            <parent-name>[US_Population_Year_Race]</parent-name>
+            <remote-alias>Asian</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NativeHawaiianPacificIslander</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NativeHawaiianPacificIslander]</local-name>
+            <parent-name>[US_Population_Year_Race]</parent-name>
+            <remote-alias>NativeHawaiianPacificIslander</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AmericanIndianAlaskanNative</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AmericanIndianAlaskanNative]</local-name>
+            <parent-name>[US_Population_Year_Race]</parent-name>
+            <remote-alias>AmericanIndianAlaskanNative</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TwoOrMoreRaces</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TwoOrMoreRaces]</local-name>
+            <parent-name>[US_Population_Year_Race]</parent-name>
+            <remote-alias>TwoOrMoreRaces</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hispanic</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hispanic]</local-name>
+            <parent-name>[US_Population_Year_Race]</parent-name>
+            <remote-alias>Hispanic</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CaseNumber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CaseNumber (US_Unclaimed_Persons)]</local-name>
+            <parent-name>[US_Unclaimed_Persons]</parent-name>
+            <remote-alias>CaseNumber</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>false</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DateBodyFound</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DateBodyFound]</local-name>
+            <parent-name>[US_Unclaimed_Persons]</parent-name>
+            <remote-alias>DateBodyFound</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MonthBodyFound</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MonthBodyFound]</local-name>
+            <parent-name>[US_Unclaimed_Persons]</parent-name>
+            <remote-alias>MonthBodyFound</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearBodyFound</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[YearBodyFound]</local-name>
+            <parent-name>[US_Unclaimed_Persons]</parent-name>
+            <remote-alias>YearBodyFound</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sex (US_Unclaimed_Persons)]</local-name>
+            <parent-name>[US_Unclaimed_Persons]</parent-name>
+            <remote-alias>Sex</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Race (US_Unclaimed_Persons)]</local-name>
+            <parent-name>[US_Unclaimed_Persons]</parent-name>
+            <remote-alias>Race</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City (US_Unclaimed_Persons)]</local-name>
+            <parent-name>[US_Unclaimed_Persons]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County (US_Unclaimed_Persons)]</local-name>
+            <parent-name>[US_Unclaimed_Persons]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State (US_Unclaimed_Persons)]</local-name>
+            <parent-name>[US_Unclaimed_Persons]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CaseNumber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CaseNumber (US_Unidentified_Persons)]</local-name>
+            <parent-name>[US_Unidentified_Persons]</parent-name>
+            <remote-alias>CaseNumber</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>false</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DateBodyFound</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DateBodyFound (US_Unidentified_Persons)]</local-name>
+            <parent-name>[US_Unidentified_Persons]</parent-name>
+            <remote-alias>DateBodyFound</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MonthBodyFound</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MonthBodyFound (US_Unidentified_Persons)]</local-name>
+            <parent-name>[US_Unidentified_Persons]</parent-name>
+            <remote-alias>MonthBodyFound</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearBodyFound</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[YearBodyFound (US_Unidentified_Persons)]</local-name>
+            <parent-name>[US_Unidentified_Persons]</parent-name>
+            <remote-alias>YearBodyFound</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LowerAge</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[LowerAge (US_Unidentified_Persons)]</local-name>
+            <parent-name>[US_Unidentified_Persons]</parent-name>
+            <remote-alias>LowerAge</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UpperAge</remote-name>
+            <remote-type>2</remote-type>
+            <local-name>[UpperAge (US_Unidentified_Persons)]</local-name>
+            <parent-name>[US_Unidentified_Persons]</parent-name>
+            <remote-alias>UpperAge</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City (US_Unidentified_Persons)]</local-name>
+            <parent-name>[US_Unidentified_Persons]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County (US_Unidentified_Persons)]</local-name>
+            <parent-name>[US_Unidentified_Persons]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State (US_Unidentified_Persons)]</local-name>
+            <parent-name>[US_Unidentified_Persons]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sex (US_Unidentified_Persons)]</local-name>
+            <parent-name>[US_Unidentified_Persons]</parent-name>
+            <remote-alias>Sex</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Race (US_Unidentified_Persons)]</local-name>
+            <parent-name>[US_Unidentified_Persons]</parent-name>
+            <remote-alias>Race</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='American Indian Alaskan Native' datatype='integer' name='[AmericanIndianAlaskanNative]' role='measure' type='quantitative' />
+      <column caption='Asian Pacific Islander' datatype='integer' name='[AsianPacificIslander]' role='measure' type='quantitative' />
+      <column caption='CaseNumber (US Unclaimed Persons)' datatype='string' name='[CaseNumber (US_Unclaimed_Persons)]' role='dimension' type='nominal' />
+      <column caption='CaseNumber (US Unidentified Persons)' datatype='string' name='[CaseNumber (US_Unidentified_Persons)]' role='dimension' type='nominal' />
+      <column caption='Case Number' datatype='string' name='[CaseNumber]' role='dimension' type='nominal' />
+      <column caption='City (US Unclaimed Persons)' datatype='string' name='[City (US_Unclaimed_Persons)]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='City (US Unidentified Persons)' datatype='string' name='[City (US_Unidentified_Persons)]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='County (US Unclaimed Persons)' datatype='string' name='[County (US_Unclaimed_Persons)]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='County (US Unidentified Persons)' datatype='string' name='[County (US_Unidentified_Persons)]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='DateBodyFound (US Unidentified Persons)' datatype='date' name='[DateBodyFound (US_Unidentified_Persons)]' role='dimension' type='ordinal' />
+      <column caption='Date Body Found' datatype='date' name='[DateBodyFound]' role='dimension' type='ordinal' />
+      <column caption='Date Last Contact' datatype='date' name='[DateLastContact]' role='dimension' type='ordinal' />
+      <column caption='LowerAge (US Unidentified Persons)' datatype='integer' name='[LowerAge (US_Unidentified_Persons)]' role='measure' type='quantitative' />
+      <column caption='Lower Age' datatype='integer' name='[LowerAge]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Missing Age (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[MissingAge]' peg='0' size='7' />
+      </column>
+      <column datatype='string' name='[Missing Age (group)]' role='dimension' type='ordinal'>
+        <calculation class='categorical-bin' column='[MissingAge]' new-bin='true'>
+          <bin default-name='false' value='&quot;1-18&quot;'>
+            <value>1</value>
+            <value>2</value>
+            <value>3</value>
+            <value>4</value>
+            <value>5</value>
+            <value>6</value>
+            <value>7</value>
+            <value>8</value>
+            <value>9</value>
+            <value>10</value>
+            <value>11</value>
+            <value>12</value>
+            <value>13</value>
+            <value>14</value>
+            <value>15</value>
+            <value>16</value>
+            <value>17</value>
+            <value>18</value>
+          </bin>
+          <bin default-name='false' value='&quot;100-116&quot;'>
+            <value>114</value>
+            <value>116</value>
+          </bin>
+          <bin default-name='false' value='&quot;19-29&quot;'>
+            <value>19</value>
+            <value>20</value>
+            <value>21</value>
+            <value>22</value>
+            <value>23</value>
+            <value>24</value>
+            <value>25</value>
+            <value>26</value>
+            <value>27</value>
+            <value>28</value>
+            <value>29</value>
+          </bin>
+          <bin default-name='false' value='&quot;30-39&quot;'>
+            <value>30</value>
+            <value>31</value>
+            <value>32</value>
+            <value>33</value>
+            <value>34</value>
+            <value>35</value>
+            <value>36</value>
+            <value>37</value>
+            <value>38</value>
+            <value>39</value>
+          </bin>
+          <bin default-name='false' value='&quot;40-49&quot;'>
+            <value>40</value>
+            <value>41</value>
+            <value>42</value>
+            <value>43</value>
+            <value>44</value>
+            <value>45</value>
+            <value>46</value>
+            <value>47</value>
+            <value>48</value>
+            <value>49</value>
+          </bin>
+          <bin default-name='false' value='&quot;50-59&quot;'>
+            <value>50</value>
+            <value>51</value>
+            <value>52</value>
+            <value>53</value>
+            <value>54</value>
+            <value>55</value>
+            <value>56</value>
+            <value>57</value>
+            <value>58</value>
+            <value>59</value>
+          </bin>
+          <bin default-name='false' value='&quot;60-69&quot;'>
+            <value>60</value>
+            <value>61</value>
+            <value>62</value>
+            <value>63</value>
+            <value>64</value>
+            <value>65</value>
+            <value>66</value>
+            <value>67</value>
+            <value>68</value>
+            <value>69</value>
+          </bin>
+          <bin default-name='false' value='&quot;70-79&quot;'>
+            <value>70</value>
+            <value>71</value>
+            <value>72</value>
+            <value>73</value>
+            <value>74</value>
+            <value>75</value>
+            <value>76</value>
+            <value>77</value>
+            <value>78</value>
+            <value>79</value>
+          </bin>
+          <bin default-name='false' value='&quot;80-89&quot;'>
+            <value>80</value>
+            <value>81</value>
+            <value>82</value>
+            <value>83</value>
+            <value>84</value>
+            <value>85</value>
+            <value>86</value>
+            <value>87</value>
+            <value>88</value>
+            <value>89</value>
+          </bin>
+          <bin default-name='false' value='&quot;90-99&quot;'>
+            <value>90</value>
+            <value>91</value>
+            <value>92</value>
+            <value>93</value>
+            <value>94</value>
+            <value>95</value>
+            <value>96</value>
+            <value>98</value>
+            <value>99</value>
+          </bin>
+        </calculation>
+      </column>
+      <column aggregation='Count' caption='Missing Age' datatype='integer' datatype-customized='true' name='[MissingAge]' role='measure' type='quantitative' />
+      <column caption='MonthBodyFound (US Unidentified Persons)' datatype='string' name='[MonthBodyFound (US_Unidentified_Persons)]' role='dimension' type='nominal' />
+      <column caption='Month Body Found' datatype='string' name='[MonthBodyFound]' role='dimension' type='nominal' />
+      <column caption='Month Last Contact' datatype='string' name='[MonthLastContact]' role='dimension' type='nominal' />
+      <column caption='Native Hawaiian Alaskan Native' datatype='integer' name='[NativeHawaiianAlaskanNative]' role='measure' type='quantitative' />
+      <column caption='Race (US Unclaimed Persons)' datatype='string' name='[Race (US_Unclaimed_Persons)]' role='dimension' type='nominal' />
+      <column caption='Race (US Unidentified Persons)' datatype='string' name='[Race (US_Unidentified_Persons)]' role='dimension' type='nominal' />
+      <column caption='Sex (US Unclaimed Persons)' datatype='string' name='[Sex (US_Unclaimed_Persons)]' role='dimension' type='nominal' />
+      <column caption='Sex (US Unidentified Persons)' datatype='string' name='[Sex (US_Unidentified_Persons)]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Sex]' role='dimension' type='nominal' />
+      <column caption='State (US Unclaimed Persons)' datatype='string' name='[State (US_Unclaimed_Persons)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='State (US Unidentified Persons)' datatype='string' name='[State (US_Unidentified_Persons)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Total Population' datatype='integer' name='[TotalPopulation]' role='measure' type='quantitative' />
+      <column caption='Two Or More Races' datatype='integer' name='[TwoOrMoreRaces]' role='measure' type='quantitative' />
+      <column caption='UpperAge (US Unidentified Persons)' datatype='integer' name='[UpperAge (US_Unidentified_Persons)]' role='measure' type='quantitative' />
+      <column caption='Upper Age' datatype='integer' name='[UpperAge]' role='measure' type='quantitative' />
+      <column caption='Year (US Population Year Race)' datatype='string' name='[Year (US_Population_Year_Race)]' role='dimension' type='nominal' />
+      <column caption='YearBodyFound (US Unidentified Persons)' datatype='string' name='[YearBodyFound (US_Unidentified_Persons)]' role='dimension' type='nominal' />
+      <column caption='Year Body Found' datatype='string' name='[YearBodyFound]' role='dimension' type='nominal' />
+      <column caption='Year Last Contact' datatype='string' name='[YearLastContact]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='US_Missing_Person' datatype='table' name='[__tableau_internal_object_id__].[US_Missing_Person_6E5BF393E23847E797EEE2C24FB5BE9C]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='US_Population_Year_Gender' datatype='table' name='[__tableau_internal_object_id__].[US_Population_Year_Gender_05A2F1367BEB4F03BAB4EEA295B0F9F7]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='US_Population_Year_Race' datatype='table' name='[__tableau_internal_object_id__].[US_Population_Year_Race_7EDB1238AB47413EA3617B40C10C8FD4]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='US_Unclaimed_Persons' datatype='table' name='[__tableau_internal_object_id__].[US_Unclaimed_Persons_EA24A8047D5043E18D4F1C886BF5A2F8]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='US_Unidentified_Persons' datatype='table' name='[__tableau_internal_object_id__].[US_Unidentified_Persons_48C44F1C4DCD4FCC8F8255F8262B9376]' role='measure' type='quantitative' />
+      <column-instance column='[CaseNumber]' derivation='Count' name='[cnt:CaseNumber:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[MissingAge]' derivation='Count' name='[cnt:MissingAge:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Sex]' derivation='None' name='[none:Sex:nk]' pivot='key' type='nominal' />
+      <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='1' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='500' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:State:nk]' type='palette'>
+            <map to='#fc7d0b'>
+              <bucket>&quot;TX&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Missing Age (group)]' palette='color_blind_10_0' type='palette'>
+            <map to='#1170aa'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#1170aa'>
+              <bucket>&quot;1-18&quot;</bucket>
+            </map>
+            <map to='#57606c'>
+              <bucket>&quot;40-49&quot;</bucket>
+            </map>
+            <map to='#5fa2ce'>
+              <bucket>&quot;50-59&quot;</bucket>
+            </map>
+            <map to='#7b848f'>
+              <bucket>&quot;70-79&quot;</bucket>
+            </map>
+            <map to='#a3acb9'>
+              <bucket>&quot;30-39&quot;</bucket>
+            </map>
+            <map to='#a3cce9'>
+              <bucket>&quot;80-89&quot;</bucket>
+            </map>
+            <map to='#c85200'>
+              <bucket>&quot;60-69&quot;</bucket>
+            </map>
+            <map to='#c8d0d9'>
+              <bucket>&quot;100-116&quot;</bucket>
+            </map>
+            <map to='#fc7d0b'>
+              <bucket>&quot;19-29&quot;</bucket>
+            </map>
+            <map to='#ffbc79'>
+              <bucket>&quot;90-99&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Sex:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1mps8k10j498li12qeon01qit4zu].[cnt:CaseNumber:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1mps8k10j498li12qeon01qit4zu].[cnt:MissingAge:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:City:nk]' palette='blue_teal_10_0' type='palette'>
+            <map to='#2c5985'>
+              <bucket>&quot;Yucca Valley&quot;</bucket>
+            </map>
+            <map to='#2c5985'>
+              <bucket>&quot;Zenia&quot;</bucket>
+            </map>
+            <map to='#2c5a85'>
+              <bucket>&quot;Yucaipa&quot;</bucket>
+            </map>
+            <map to='#2c5a86'>
+              <bucket>&quot;Yuba City&quot;</bucket>
+            </map>
+            <map to='#2c5b86'>
+              <bucket>&quot;Yreka&quot;</bucket>
+            </map>
+            <map to='#2c5b87'>
+              <bucket>&quot;Yosemite National Park&quot;</bucket>
+            </map>
+            <map to='#2c5c87'>
+              <bucket>&quot;Yermo&quot;</bucket>
+            </map>
+            <map to='#2c5c87'>
+              <bucket>&quot;Yosemite&quot;</bucket>
+            </map>
+            <map to='#2c5d88'>
+              <bucket>&quot;Willows&quot;</bucket>
+            </map>
+            <map to='#2d5d88'>
+              <bucket>&quot;Willits&quot;</bucket>
+            </map>
+            <map to='#2d5e89'>
+              <bucket>&quot;Whitmore&quot;</bucket>
+            </map>
+            <map to='#2d5e89'>
+              <bucket>&quot;Wildomar&quot;</bucket>
+            </map>
+            <map to='#2d5f8a'>
+              <bucket>&quot;Westley&quot;</bucket>
+            </map>
+            <map to='#2d5f8a'>
+              <bucket>&quot;Whiskeytown&quot;</bucket>
+            </map>
+            <map to='#2d608a'>
+              <bucket>&quot;West Sacramento&quot;</bucket>
+            </map>
+            <map to='#2d608b'>
+              <bucket>&quot;West Hollywood&quot;</bucket>
+            </map>
+            <map to='#2d618b'>
+              <bucket>&quot;West Hills&quot;</bucket>
+            </map>
+            <map to='#2e618c'>
+              <bucket>&quot;Watsonville&quot;</bucket>
+            </map>
+            <map to='#2e628c'>
+              <bucket>&quot;Warner Springs&quot;</bucket>
+            </map>
+            <map to='#2e628d'>
+              <bucket>&quot;Victorville&quot;</bucket>
+            </map>
+            <map to='#2e638d'>
+              <bucket>&quot;Van nuys&quot;</bucket>
+            </map>
+            <map to='#2e638d'>
+              <bucket>&quot;Van Nuys&quot;</bucket>
+            </map>
+            <map to='#2e648e'>
+              <bucket>&quot;Vacaville&quot;</bucket>
+            </map>
+            <map to='#2e648e'>
+              <bucket>&quot;Vallejo&quot;</bucket>
+            </map>
+            <map to='#2e658f'>
+              <bucket>&quot;Twin Peaks&quot;</bucket>
+            </map>
+            <map to='#2f658f'>
+              <bucket>&quot;Twain Harte&quot;</bucket>
+            </map>
+            <map to='#2f668f'>
+              <bucket>&quot;Turlock&quot;</bucket>
+            </map>
+            <map to='#2f6690'>
+              <bucket>&quot;Tuolumne&quot;</bucket>
+            </map>
+            <map to='#2f6790'>
+              <bucket>&quot;Tujunga&quot;</bucket>
+            </map>
+            <map to='#2f6791'>
+              <bucket>&quot;Truckee&quot;</bucket>
+            </map>
+            <map to='#2f6891'>
+              <bucket>&quot;Topanga&quot;</bucket>
+            </map>
+            <map to='#2f6892'>
+              <bucket>&quot;Thousand Palms&quot;</bucket>
+            </map>
+            <map to='#2f6992'>
+              <bucket>&quot;Tehama&quot;</bucket>
+            </map>
+            <map to='#2f6992'>
+              <bucket>&quot;Thousand Oaks&quot;</bucket>
+            </map>
+            <map to='#306a93'>
+              <bucket>&quot;Tecate&quot;</bucket>
+            </map>
+            <map to='#306b93'>
+              <bucket>&quot;Tarzana&quot;</bucket>
+            </map>
+            <map to='#306b94'>
+              <bucket>&quot;Sylmar&quot;</bucket>
+            </map>
+            <map to='#306c94'>
+              <bucket>&quot;Susanville&quot;</bucket>
+            </map>
+            <map to='#306c94'>
+              <bucket>&quot;Sutter Creek&quot;</bucket>
+            </map>
+            <map to='#306d95'>
+              <bucket>&quot;Studio City&quot;</bucket>
+            </map>
+            <map to='#306d95'>
+              <bucket>&quot;Sunland&quot;</bucket>
+            </map>
+            <map to='#306e96'>
+              <bucket>&quot;Strawberry Valley&quot;</bucket>
+            </map>
+            <map to='#316f96'>
+              <bucket>&quot;South Lake Tahoe&quot;</bucket>
+            </map>
+            <map to='#316f96'>
+              <bucket>&quot;Stevenson Ranch&quot;</bucket>
+            </map>
+            <map to='#317097'>
+              <bucket>&quot;Solana Beach&quot;</bucket>
+            </map>
+            <map to='#317097'>
+              <bucket>&quot;Somis&quot;</bucket>
+            </map>
+            <map to='#317198'>
+              <bucket>&quot;Simi Valley&quot;</bucket>
+            </map>
+            <map to='#317198'>
+              <bucket>&quot;Smith River&quot;</bucket>
+            </map>
+            <map to='#317298'>
+              <bucket>&quot;Shingletown&quot;</bucket>
+            </map>
+            <map to='#317399'>
+              <bucket>&quot;Sherman Oaks&quot;</bucket>
+            </map>
+            <map to='#327399'>
+              <bucket>&quot;Shafter&quot;</bucket>
+            </map>
+            <map to='#32749a'>
+              <bucket>&quot;Sausalito&quot;</bucket>
+            </map>
+            <map to='#32749a'>
+              <bucket>&quot;Scotts Valley&quot;</bucket>
+            </map>
+            <map to='#32759a'>
+              <bucket>&quot;Santa Ysabel&quot;</bucket>
+            </map>
+            <map to='#32759b'>
+              <bucket>&quot;Santa Paula&quot;</bucket>
+            </map>
+            <map to='#32769b'>
+              <bucket>&quot;Santa Monica&quot;</bucket>
+            </map>
+            <map to='#32779b'>
+              <bucket>&quot;Santa Clarita&quot;</bucket>
+            </map>
+            <map to='#32779c'>
+              <bucket>&quot;Santa Barbara&quot;</bucket>
+            </map>
+            <map to='#33789c'>
+              <bucket>&quot;Santa Ana&quot;</bucket>
+            </map>
+            <map to='#33789d'>
+              <bucket>&quot;San Ramon&quot;</bucket>
+            </map>
+            <map to='#33799d'>
+              <bucket>&quot;San Pedro&quot;</bucket>
+            </map>
+            <map to='#33799d'>
+              <bucket>&quot;San Rafael&quot;</bucket>
+            </map>
+            <map to='#337a9e'>
+              <bucket>&quot;San Pablo&quot;</bucket>
+            </map>
+            <map to='#337b9e'>
+              <bucket>&quot;San Luis Obispo&quot;</bucket>
+            </map>
+            <map to='#337b9f'>
+              <bucket>&quot;San Luis&quot;</bucket>
+            </map>
+            <map to='#337c9f'>
+              <bucket>&quot;San Leandro&quot;</bucket>
+            </map>
+            <map to='#337c9f'>
+              <bucket>&quot;San Lorenzo&quot;</bucket>
+            </map>
+            <map to='#347da0'>
+              <bucket>&quot;San Joaquin&quot;</bucket>
+            </map>
+            <map to='#347da0'>
+              <bucket>&quot;San Juan Capistrano&quot;</bucket>
+            </map>
+            <map to='#347ea1'>
+              <bucket>&quot;San Jacinto&quot;</bucket>
+            </map>
+            <map to='#347fa1'>
+              <bucket>&quot;San Gabriel&quot;</bucket>
+            </map>
+            <map to='#347fa2'>
+              <bucket>&quot;San Fernando&quot;</bucket>
+            </map>
+            <map to='#3480a2'>
+              <bucket>&quot;San Clemente&quot;</bucket>
+            </map>
+            <map to='#3480a2'>
+              <bucket>&quot;San Dimas&quot;</bucket>
+            </map>
+            <map to='#3481a3'>
+              <bucket>&quot;SAN BERNARDINO&quot;</bucket>
+            </map>
+            <map to='#3481a3'>
+              <bucket>&quot;San Bruno&quot;</bucket>
+            </map>
+            <map to='#3482a4'>
+              <bucket>&quot;Salton City&quot;</bucket>
+            </map>
+            <map to='#3482a4'>
+              <bucket>&quot;San Bernardino&quot;</bucket>
+            </map>
+            <map to='#3483a4'>
+              <bucket>&quot;Running Springs&quot;</bucket>
+            </map>
+            <map to='#3483a5'>
+              <bucket>&quot;Rosemead&quot;</bucket>
+            </map>
+            <map to='#3484a5'>
+              <bucket>&quot;Rohnert Park&quot;</bucket>
+            </map>
+            <map to='#3485a6'>
+              <bucket>&quot;Rialto&quot;</bucket>
+            </map>
+            <map to='#3485a6'>
+              <bucket>&quot;Rio Linda&quot;</bucket>
+            </map>
+            <map to='#3586a7'>
+              <bucket>&quot;Redwood Valley&quot;</bucket>
+            </map>
+            <map to='#3586a7'>
+              <bucket>&quot;Reedley&quot;</bucket>
+            </map>
+            <map to='#3587a7'>
+              <bucket>&quot;Redwood City&quot;</bucket>
+            </map>
+            <map to='#3587a8'>
+              <bucket>&quot;Redondo Beach&quot;</bucket>
+            </map>
+            <map to='#3588a8'>
+              <bucket>&quot;Red Bluff&quot;</bucket>
+            </map>
+            <map to='#3588a9'>
+              <bucket>&quot;Rancho Mirage&quot;</bucket>
+            </map>
+            <map to='#3589a9'>
+              <bucket>&quot;Rancho Cordova&quot;</bucket>
+            </map>
+            <map to='#3589aa'>
+              <bucket>&quot;Poway&quot;</bucket>
+            </map>
+            <map to='#358aaa'>
+              <bucket>&quot;Pollock Pines&quot;</bucket>
+            </map>
+            <map to='#358aaa'>
+              <bucket>&quot;Portola&quot;</bucket>
+            </map>
+            <map to='#358bab'>
+              <bucket>&quot;Point Reyes Station&quot;</bucket>
+            </map>
+            <map to='#358cab'>
+              <bucket>&quot;Point Arena&quot;</bucket>
+            </map>
+            <map to='#358cac'>
+              <bucket>&quot;Placentia&quot;</bucket>
+            </map>
+            <map to='#358dac'>
+              <bucket>&quot;Phelan&quot;</bucket>
+            </map>
+            <map to='#358dac'>
+              <bucket>&quot;Piru&quot;</bucket>
+            </map>
+            <map to='#358ead'>
+              <bucket>&quot;Pescadero&quot;</bucket>
+            </map>
+            <map to='#358ead'>
+              <bucket>&quot;Petaluma&quot;</bucket>
+            </map>
+            <map to='#368fae'>
+              <bucket>&quot;Penn Valley&quot;</bucket>
+            </map>
+            <map to='#368fae'>
+              <bucket>&quot;Perris&quot;</bucket>
+            </map>
+            <map to='#3790ae'>
+              <bucket>&quot;Pauma Valley&quot;</bucket>
+            </map>
+            <map to='#3791af'>
+              <bucket>&quot;Parlier&quot;</bucket>
+            </map>
+            <map to='#3891af'>
+              <bucket>&quot;Paramount&quot;</bucket>
+            </map>
+            <map to='#3892af'>
+              <bucket>&quot;Palm Desert&quot;</bucket>
+            </map>
+            <map to='#3992b0'>
+              <bucket>&quot;Pala&quot;</bucket>
+            </map>
+            <map to='#3993b0'>
+              <bucket>&quot;Pacifica&quot;</bucket>
+            </map>
+            <map to='#3993b0'>
+              <bucket>&quot;Pacoima&quot;</bucket>
+            </map>
+            <map to='#3a94b1'>
+              <bucket>&quot;Pacific Beach&quot;</bucket>
+            </map>
+            <map to='#3a95b1'>
+              <bucket>&quot;Oxnard&quot;</bucket>
+            </map>
+            <map to='#3b95b1'>
+              <bucket>&quot;Ojai&quot;</bucket>
+            </map>
+            <map to='#3b96b2'>
+              <bucket>&quot;Nuevo&quot;</bucket>
+            </map>
+            <map to='#3c96b2'>
+              <bucket>&quot;Novato&quot;</bucket>
+            </map>
+            <map to='#3c97b2'>
+              <bucket>&quot;North San Juan&quot;</bucket>
+            </map>
+            <map to='#3d97b3'>
+              <bucket>&quot;North Hollywood&quot;</bucket>
+            </map>
+            <map to='#3d98b3'>
+              <bucket>&quot;North Highlands&quot;</bucket>
+            </map>
+            <map to='#3d99b3'>
+              <bucket>&quot;Nipton&quot;</bucket>
+            </map>
+            <map to='#3e99b4'>
+              <bucket>&quot;Nipomo&quot;</bucket>
+            </map>
+            <map to='#3e9ab4'>
+              <bucket>&quot;NILAND&quot;</bucket>
+            </map>
+            <map to='#3f9ab4'>
+              <bucket>&quot;Niland&quot;</bucket>
+            </map>
+            <map to='#3f9bb5'>
+              <bucket>&quot;Newport Beach&quot;</bucket>
+            </map>
+            <map to='#409bb5'>
+              <bucket>&quot;Newberry Springs&quot;</bucket>
+            </map>
+            <map to='#409cb5'>
+              <bucket>&quot;Nevada City&quot;</bucket>
+            </map>
+            <map to='#419db6'>
+              <bucket>&quot;Mt. Shasta&quot;</bucket>
+            </map>
+            <map to='#419db6'>
+              <bucket>&quot;Needles&quot;</bucket>
+            </map>
+            <map to='#429eb6'>
+              <bucket>&quot;Mountain Center&quot;</bucket>
+            </map>
+            <map to='#429eb7'>
+              <bucket>&quot;Mount Shasta&quot;</bucket>
+            </map>
+            <map to='#429fb7'>
+              <bucket>&quot;Moss Beach&quot;</bucket>
+            </map>
+            <map to='#439fb7'>
+              <bucket>&quot;Morro Bay&quot;</bucket>
+            </map>
+            <map to='#43a0b8'>
+              <bucket>&quot;Morongo Valley&quot;</bucket>
+            </map>
+            <map to='#44a1b8'>
+              <bucket>&quot;Moreno Valley&quot;</bucket>
+            </map>
+            <map to='#44a1b8'>
+              <bucket>&quot;Morgan Hill&quot;</bucket>
+            </map>
+            <map to='#45a2b9'>
+              <bucket>&quot;Moorpark&quot;</bucket>
+            </map>
+            <map to='#46a2b9'>
+              <bucket>&quot;Montgomery Creek&quot;</bucket>
+            </map>
+            <map to='#47a3b9'>
+              <bucket>&quot;Montara&quot;</bucket>
+            </map>
+            <map to='#48a3b9'>
+              <bucket>&quot;Mokelumne Hill&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Boulder Creek&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Dobbins&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Redlands&quot;</bucket>
+            </map>
+            <map to='#49a4ba'>
+              <bucket>&quot;Mojave&quot;</bucket>
+            </map>
+            <map to='#4aa4ba'>
+              <bucket>&quot;Mission Viejo&quot;</bucket>
+            </map>
+            <map to='#4ba5ba'>
+              <bucket>&quot;Milpitas&quot;</bucket>
+            </map>
+            <map to='#4ca5bb'>
+              <bucket>&quot;Millbrae&quot;</bucket>
+            </map>
+            <map to='#4da6bb'>
+              <bucket>&quot;Mill Valley&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bell Gardens&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;El Toro&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Klamath River&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Port Hueneme&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Rowland Heights&quot;</bucket>
+            </map>
+            <map to='#4ea6bb'>
+              <bucket>&quot;Merced&quot;</bucket>
+            </map>
+            <map to='#4fa7bb'>
+              <bucket>&quot;Menlo park&quot;</bucket>
+            </map>
+            <map to='#50a7bc'>
+              <bucket>&quot;Menlo Park&quot;</bucket>
+            </map>
+            <map to='#51a8bc'>
+              <bucket>&quot;Mendocino&quot;</bucket>
+            </map>
+            <map to='#52a8bc'>
+              <bucket>&quot;McKinleyville&quot;</bucket>
+            </map>
+            <map to='#53a9bc'>
+              <bucket>&quot;McCloud&quot;</bucket>
+            </map>
+            <map to='#53a9bd'>
+              <bucket>&quot;Mammoth Lakes&quot;</bucket>
+            </map>
+            <map to='#54aabd'>
+              <bucket>&quot;Malibu&quot;</bucket>
+            </map>
+            <map to='#55aabd'>
+              <bucket>&quot;Magalia&quot;</bucket>
+            </map>
+            <map to='#56abbe'>
+              <bucket>&quot;Mad River&quot;</bucket>
+            </map>
+            <map to='#57acbe'>
+              <bucket>&quot;Lytle Creek&quot;</bucket>
+            </map>
+            <map to='#58acbe'>
+              <bucket>&quot;Lynwood&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Big Bear Lake&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Death Valley&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Twenty-Nine Palms&quot;</bucket>
+            </map>
+            <map to='#59adbe'>
+              <bucket>&quot;Lucerne Valley&quot;</bucket>
+            </map>
+            <map to='#5aadbf'>
+              <bucket>&quot;Los Gatos&quot;</bucket>
+            </map>
+            <map to='#5baebf'>
+              <bucket>&quot;Los Banos&quot;</bucket>
+            </map>
+            <map to='#5caebf'>
+              <bucket>&quot;Los Angeles&quot;</bucket>
+            </map>
+            <map to='#5dafbf'>
+              <bucket>&quot;Los Altos&quot;</bucket>
+            </map>
+            <map to='#5eafc0'>
+              <bucket>&quot;Los Alamitos&quot;</bucket>
+            </map>
+            <map to='#5fb0c0'>
+              <bucket>&quot;Lompoc&quot;</bucket>
+            </map>
+            <map to='#60b0c0'>
+              <bucket>&quot;Lomita&quot;</bucket>
+            </map>
+            <map to='#61b1c1'>
+              <bucket>&quot;Lemoore&quot;</bucket>
+            </map>
+            <map to='#62b1c1'>
+              <bucket>&quot;Laton&quot;</bucket>
+            </map>
+            <map to='#63b2c1'>
+              <bucket>&quot;Lake Hughes&quot;</bucket>
+            </map>
+            <map to='#64b2c1'>
+              <bucket>&quot;Lake Elsinore&quot;</bucket>
+            </map>
+            <map to='#65b3c2'>
+              <bucket>&quot;Lake Arrowhead&quot;</bucket>
+            </map>
+            <map to='#66b3c2'>
+              <bucket>&quot;Laguna Niguel&quot;</bucket>
+            </map>
+            <map to='#67b4c2'>
+              <bucket>&quot;La Puente&quot;</bucket>
+            </map>
+            <map to='#67b4c2'>
+              <bucket>&quot;Laguna Beach&quot;</bucket>
+            </map>
+            <map to='#68b5c3'>
+              <bucket>&quot;La Mirada&quot;</bucket>
+            </map>
+            <map to='#69b5c3'>
+              <bucket>&quot;La Jolla&quot;</bucket>
+            </map>
+            <map to='#6ab6c3'>
+              <bucket>&quot;La Habra&quot;</bucket>
+            </map>
+            <map to='#6bb6c4'>
+              <bucket>&quot;Kernville&quot;</bucket>
+            </map>
+            <map to='#6cb7c4'>
+              <bucket>&quot;Indio&quot;</bucket>
+            </map>
+            <map to='#6cb7c4'>
+              <bucket>&quot;Jurupa Valley&quot;</bucket>
+            </map>
+            <map to='#6db8c4'>
+              <bucket>&quot;Imperial Beach&quot;</bucket>
+            </map>
+            <map to='#6eb8c5'>
+              <bucket>&quot;Idyllwild&quot;</bucket>
+            </map>
+            <map to='#6fb8c5'>
+              <bucket>&quot;Huntington Park&quot;</bucket>
+            </map>
+            <map to='#70b9c5'>
+              <bucket>&quot;Huntington Beach&quot;</bucket>
+            </map>
+            <map to='#71b9c5'>
+              <bucket>&quot;Hoopa&quot;</bucket>
+            </map>
+            <map to='#71bac6'>
+              <bucket>&quot;Holtville&quot;</bucket>
+            </map>
+            <map to='#72bac6'>
+              <bucket>&quot;Hermosa Beach&quot;</bucket>
+            </map>
+            <map to='#73bbc6'>
+              <bucket>&quot;Hercules&quot;</bucket>
+            </map>
+            <map to='#74bbc6'>
+              <bucket>&quot;Hemet&quot;</bucket>
+            </map>
+            <map to='#75bcc7'>
+              <bucket>&quot;Hayfork&quot;</bucket>
+            </map>
+            <map to='#76bcc7'>
+              <bucket>&quot;Hawaiian Gardens&quot;</bucket>
+            </map>
+            <map to='#77bdc7'>
+              <bucket>&quot;Hat Creek&quot;</bucket>
+            </map>
+            <map to='#77bdc8'>
+              <bucket>&quot;Happy Camp&quot;</bucket>
+            </map>
+            <map to='#78bec8'>
+              <bucket>&quot;Half Moon Bay&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Granada Hills&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Lee Vining&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Shasta Lake&quot;</bucket>
+            </map>
+            <map to='#79bec8'>
+              <bucket>&quot;Guerneville&quot;</bucket>
+            </map>
+            <map to='#7abfc8'>
+              <bucket>&quot;Grover Beach&quot;</bucket>
+            </map>
+            <map to='#7bbfc9'>
+              <bucket>&quot;Granite Bay&quot;</bucket>
+            </map>
+            <map to='#7cc0c9'>
+              <bucket>&quot;Gilroy&quot;</bucket>
+            </map>
+            <map to='#7cc0c9'>
+              <bucket>&quot;Goleta&quot;</bucket>
+            </map>
+            <map to='#7dc1c9'>
+              <bucket>&quot;Garberville&quot;</bucket>
+            </map>
+            <map to='#7ec1ca'>
+              <bucket>&quot;Frazier Park&quot;</bucket>
+            </map>
+            <map to='#7fc2ca'>
+              <bucket>&quot;Fountain Valley&quot;</bucket>
+            </map>
+            <map to='#80c2ca'>
+              <bucket>&quot;Fort Jones&quot;</bucket>
+            </map>
+            <map to='#81c3cb'>
+              <bucket>&quot;Fallbrook&quot;</bucket>
+            </map>
+            <map to='#82c3cb'>
+              <bucket>&quot;Esparto&quot;</bucket>
+            </map>
+            <map to='#82c4cb'>
+              <bucket>&quot;Escondido&quot;</bucket>
+            </map>
+            <map to='#83c4cb'>
+              <bucket>&quot;Encinitas&quot;</bucket>
+            </map>
+            <map to='#84c5cb'>
+              <bucket>&quot;El Segundo&quot;</bucket>
+            </map>
+            <map to='#85c5cb'>
+              <bucket>&quot;El Dorado Hills&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Aptos&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Brea&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Downieville&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Hornbrook&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Marina&quot;</bucket>
+            </map>
+            <map to='#86c6cc'>
+              <bucket>&quot;El Cerrito&quot;</bucket>
+            </map>
+            <map to='#87c6cc'>
+              <bucket>&quot;El Cajon&quot;</bucket>
+            </map>
+            <map to='#87c6cc'>
+              <bucket>&quot;El Centro&quot;</bucket>
+            </map>
+            <map to='#88c7cc'>
+              <bucket>&quot;East Palo Alto&quot;</bucket>
+            </map>
+            <map to='#89c7cc'>
+              <bucket>&quot;East Los Angeles&quot;</bucket>
+            </map>
+            <map to='#8ac8cd'>
+              <bucket>&quot;Dulzura&quot;</bucket>
+            </map>
+            <map to='#8bc8cd'>
+              <bucket>&quot;Duarte&quot;</bucket>
+            </map>
+            <map to='#8cc9cd'>
+              <bucket>&quot;Dillon Beach&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Fort Irwin&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Summerland&quot;</bucket>
+            </map>
+            <map to='#8dc9cd'>
+              <bucket>&quot;Diamond Bar&quot;</bucket>
+            </map>
+            <map to='#8dcacd'>
+              <bucket>&quot;Desert Hot Springs&quot;</bucket>
+            </map>
+            <map to='#8ecacd'>
+              <bucket>&quot;Dana Point&quot;</bucket>
+            </map>
+            <map to='#8fcbce'>
+              <bucket>&quot;Daly City&quot;</bucket>
+            </map>
+            <map to='#90cbce'>
+              <bucket>&quot;Culver City&quot;</bucket>
+            </map>
+            <map to='#91ccce'>
+              <bucket>&quot;Covina&quot;</bucket>
+            </map>
+            <map to='#92ccce'>
+              <bucket>&quot;Covelo&quot;</bucket>
+            </map>
+            <map to='#92cdce'>
+              <bucket>&quot;Cotati&quot;</bucket>
+            </map>
+            <map to='#93cdcf'>
+              <bucket>&quot;Costa Mesa&quot;</bucket>
+            </map>
+            <map to='#94cecf'>
+              <bucket>&quot;Coarsegold&quot;</bucket>
+            </map>
+            <map to='#95cecf'>
+              <bucket>&quot;Coalinga&quot;</bucket>
+            </map>
+            <map to='#96cfcf'>
+              <bucket>&quot;Citrus Heights&quot;</bucket>
+            </map>
+            <map to='#97cfcf'>
+              <bucket>&quot;Chula Vista&quot;</bucket>
+            </map>
+            <map to='#98d0cf'>
+              <bucket>&quot;Chino Hills&quot;</bucket>
+            </map>
+            <map to='#98d0d0'>
+              <bucket>&quot;Chino&quot;</bucket>
+            </map>
+            <map to='#99d1d0'>
+              <bucket>&quot;Cayucos&quot;</bucket>
+            </map>
+            <map to='#9ad1d0'>
+              <bucket>&quot;Cathedral City&quot;</bucket>
+            </map>
+            <map to='#9bd2d0'>
+              <bucket>&quot;Castaic&quot;</bucket>
+            </map>
+            <map to='#9cd2d0'>
+              <bucket>&quot;Casmalia&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Banning&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;El Monte&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Los Altos Hills&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Midpines&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Napa&quot;</bucket>
+            </map>
+            <map to='#9dd3d1'>
+              <bucket>&quot;Caruthers&quot;</bucket>
+            </map>
+            <map to='#9ed3d1'>
+              <bucket>&quot;Carmichael&quot;</bucket>
+            </map>
+            <map to='#9ed4d1'>
+              <bucket>&quot;Carmel-by-the-Sea&quot;</bucket>
+            </map>
+            <map to='#9fd4d1'>
+              <bucket>&quot;Capitola&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Belvedere&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Knights Landing&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;South San Francisco&quot;</bucket>
+            </map>
+            <map to='#a0d5d1'>
+              <bucket>&quot;Canyon Country&quot;</bucket>
+            </map>
+            <map to='#a1d5d2'>
+              <bucket>&quot;Canoga Park&quot;</bucket>
+            </map>
+            <map to='#a2d6d2'>
+              <bucket>&quot;Cameron Park&quot;</bucket>
+            </map>
+            <map to='#a3d6d2'>
+              <bucket>&quot;Camarillo&quot;</bucket>
+            </map>
+            <map to='#a4d7d2'>
+              <bucket>&quot;Calipatria&quot;</bucket>
+            </map>
+            <map to='#a5d7d2'>
+              <bucket>&quot;Calimesa&quot;</bucket>
+            </map>
+            <map to='#a6d8d3'>
+              <bucket>&quot;California City&quot;</bucket>
+            </map>
+            <map to='#a7d8d3'>
+              <bucket>&quot;Calexico&quot;</bucket>
+            </map>
+            <map to='#a8d9d3'>
+              <bucket>&quot;Calabasas&quot;</bucket>
+            </map>
+            <map to='#a9d9d3'>
+              <bucket>&quot;Blue Jay&quot;</bucket>
+            </map>
+            <map to='#aadad3'>
+              <bucket>&quot;Big Sur&quot;</bucket>
+            </map>
+            <map to='#abdad4'>
+              <bucket>&quot;Big Bear City&quot;</bucket>
+            </map>
+            <map to='#acdbd4'>
+              <bucket>&quot;Benicia&quot;</bucket>
+            </map>
+            <map to='#addbd4'>
+              <bucket>&quot;Baldwin Park&quot;</bucket>
+            </map>
+            <map to='#addcd4'>
+              <bucket>&quot;Azusa&quot;</bucket>
+            </map>
+            <map to='#aedcd5'>
+              <bucket>&quot;Auberry&quot;</bucket>
+            </map>
+            <map to='#afddd5'>
+              <bucket>&quot;Atascadero&quot;</bucket>
+            </map>
+            <map to='#b0ddd5'>
+              <bucket>&quot;Arvin&quot;</bucket>
+            </map>
+            <map to='#b1ded5'>
+              <bucket>&quot;Arroyo Grande&quot;</bucket>
+            </map>
+            <map to='#b2ded5'>
+              <bucket>&quot;Arcata&quot;</bucket>
+            </map>
+            <map to='#b3dfd6'>
+              <bucket>&quot;Arbuckle&quot;</bucket>
+            </map>
+            <map to='#b4dfd6'>
+              <bucket>&quot;Angels Camp&quot;</bucket>
+            </map>
+            <map to='#b5e0d6'>
+              <bucket>&quot;Anaheim&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Castro Valley&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Monte Rio&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Paso Robles&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Rancho Palos Verdes&quot;</bucket>
+            </map>
+            <map to='#b6e0d6'>
+              <bucket>&quot;Alturas&quot;</bucket>
+            </map>
+            <map to='#b7e1d6'>
+              <bucket>&quot;Altadena&quot;</bucket>
+            </map>
+            <map to='#b8e1d7'>
+              <bucket>&quot;Aliso Viejo&quot;</bucket>
+            </map>
+            <map to='#b9e2d7'>
+              <bucket>&quot;Alderpoint&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Phillipsville&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Rescue&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Tehachapi&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;West Covina&quot;</bucket>
+            </map>
+            <map to='#bae2d7'>
+              <bucket>&quot;Alameda&quot;</bucket>
+            </map>
+            <map to='#bbe3d7'>
+              <bucket>&quot;Agoura Hills&quot;</bucket>
+            </map>
+            <map to='#bce4d8'>
+              <bucket>&quot;Adelanto&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Clearlake Oaks&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Greenbrae&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Ocean Beach&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Pinole&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Reseda&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Hacienda Heights&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Kentfield&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Myers Flat&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Orange Cove&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Rocklin&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Bay Point&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Hanford&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Kings Beach&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Pacific Grove&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;San Quentin&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Sonoma&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Buena Park&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Marina del Rey&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Seal Beach&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Tahoe City&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Borrego Springs&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Newbury Park&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Potrero&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Isla Vista&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Ocean Beach,&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Temecula&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Chowchilla&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Marina Del Rey&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Northridge&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;San Anselmo&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='US_Missing_Person' id='US_Missing_Person_6E5BF393E23847E797EEE2C24FB5BE9C'>
+            <properties context=''>
+              <relation connection='postgres.0g6tud9172ixfy12jwte40fxhbl7' name='US_Missing_Person' table='[public].[US_Missing_Person]' type='table' />
+            </properties>
+          </object>
+          <object caption='US_Population_Year_Gender' id='US_Population_Year_Gender_05A2F1367BEB4F03BAB4EEA295B0F9F7'>
+            <properties context=''>
+              <relation connection='postgres.0g6tud9172ixfy12jwte40fxhbl7' name='US_Population_Year_Gender' table='[public].[US_Population_Year_Gender]' type='table' />
+            </properties>
+          </object>
+          <object caption='US_Population_Year_Race' id='US_Population_Year_Race_7EDB1238AB47413EA3617B40C10C8FD4'>
+            <properties context=''>
+              <relation connection='postgres.0g6tud9172ixfy12jwte40fxhbl7' name='US_Population_Year_Race' table='[public].[US_Population_Year_Race]' type='table' />
+            </properties>
+          </object>
+          <object caption='US_Unclaimed_Persons' id='US_Unclaimed_Persons_EA24A8047D5043E18D4F1C886BF5A2F8'>
+            <properties context=''>
+              <relation connection='postgres.0g6tud9172ixfy12jwte40fxhbl7' name='US_Unclaimed_Persons' table='[public].[US_Unclaimed_Persons]' type='table' />
+            </properties>
+          </object>
+          <object caption='US_Unidentified_Persons' id='US_Unidentified_Persons_48C44F1C4DCD4FCC8F8255F8262B9376'>
+            <properties context=''>
+              <relation connection='postgres.0g6tud9172ixfy12jwte40fxhbl7' name='US_Unidentified_Persons' table='[public].[US_Unidentified_Persons]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Year]' />
+              <expression op='[YearLastContact]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='US_Population_Year_Gender_05A2F1367BEB4F03BAB4EEA295B0F9F7' unique-key='true' />
+            <second-end-point object-id='US_Missing_Person_6E5BF393E23847E797EEE2C24FB5BE9C' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Year]' />
+              <expression op='[Year (US_Population_Year_Race)]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='US_Population_Year_Gender_05A2F1367BEB4F03BAB4EEA295B0F9F7' unique-key='true' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='US_Population_Year_Race_7EDB1238AB47413EA3617B40C10C8FD4' unique-key='true' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Year]' />
+              <expression op='[YearBodyFound]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='US_Population_Year_Gender_05A2F1367BEB4F03BAB4EEA295B0F9F7' unique-key='true' />
+            <second-end-point object-id='US_Unclaimed_Persons_EA24A8047D5043E18D4F1C886BF5A2F8' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Year]' />
+              <expression op='[YearBodyFound (US_Unidentified_Persons)]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='US_Population_Year_Gender_05A2F1367BEB4F03BAB4EEA295B0F9F7' unique-key='true' />
+            <second-end-point object-id='US_Unidentified_Persons_48C44F1C4DCD4FCC8F8255F8262B9376' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='All Missing Person Case Heat Map'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>All Reported Missing Persons Case By Area</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='CapStoneData' name='federated.1mps8k10j498li12qeon01qit4zu' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1mps8k10j498li12qeon01qit4zu'>
+            <column caption='Case Number' datatype='string' name='[CaseNumber]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[CaseNumber]' derivation='Count' name='[cnt:CaseNumber:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1mps8k10j498li12qeon01qit4zu].[Longitude (generated)]' field-type='quantitative' max='35097205.28278596' min='19525032.892988842' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1mps8k10j498li12qeon01qit4zu].[Latitude (generated)]' field-type='quantitative' max='11469727.935199426' min='1501471.713604002' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1mps8k10j498li12qeon01qit4zu].[none:State:nk]' />
+              <color column='[federated.1mps8k10j498li12qeon01qit4zu].[cnt:CaseNumber:qk]' />
+              <geometry column='[federated.1mps8k10j498li12qeon01qit4zu].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1mps8k10j498li12qeon01qit4zu].[Latitude (generated)]</rows>
+        <cols>[federated.1mps8k10j498li12qeon01qit4zu].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{60722BAD-8595-4F6A-9578-521EC2B064DC}' />
+    </worksheet>
+    <worksheet name='Bar Chart Total Male Missing Person Cases By State'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Total Male Missing Persons Cases By State (1902-2023)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='CapStoneData' name='federated.1mps8k10j498li12qeon01qit4zu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mps8k10j498li12qeon01qit4zu'>
+            <column caption='Case Number' datatype='string' name='[CaseNumber]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Sex]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[CaseNumber]' derivation='Count' name='[cnt:CaseNumber:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sex]' derivation='None' name='[none:Sex:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mps8k10j498li12qeon01qit4zu].[none:Sex:nk]'>
+            <groupfilter function='member' level='[none:Sex:nk]' member='&quot;M&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1mps8k10j498li12qeon01qit4zu].[none:Sex:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.1mps8k10j498li12qeon01qit4zu].[cnt:CaseNumber:qk]</rows>
+        <cols>[federated.1mps8k10j498li12qeon01qit4zu].[none:State:nk]</cols>
+      </table>
+      <simple-id uuid='{D128FCCF-2293-4267-9917-8E5D42F5CF55}' />
+    </worksheet>
+    <worksheet name='Box Whisker chart of States with Highest Reported Missing Person Cases'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>States With Highest Number Of Reported Case (2000-2022)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='CapStoneData' name='federated.1mps8k10j498li12qeon01qit4zu' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1mps8k10j498li12qeon01qit4zu'>
+            <column caption='Case Number' datatype='string' name='[CaseNumber]' role='dimension' type='nominal' />
+            <column caption='Date Last Contact' datatype='date' name='[DateLastContact]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[CaseNumber]' derivation='Count' name='[cnt:CaseNumber:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[DateLastContact]' derivation='Year' name='[yr:DateLastContact:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mps8k10j498li12qeon01qit4zu].[none:State:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:State:nk]' member='&quot;AK&quot;' />
+              <groupfilter function='member' level='[none:State:nk]' member='&quot;AZ&quot;' />
+              <groupfilter function='member' level='[none:State:nk]' member='&quot;CA&quot;' />
+              <groupfilter function='member' level='[none:State:nk]' member='&quot;FL&quot;' />
+              <groupfilter function='member' level='[none:State:nk]' member='&quot;NY&quot;' />
+              <groupfilter function='member' level='[none:State:nk]' member='&quot;TX&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1mps8k10j498li12qeon01qit4zu].[yr:DateLastContact:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2000' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2001' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2002' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2003' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2004' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2005' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2006' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2007' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2008' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2009' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2010' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2011' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2012' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2013' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2014' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2015' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2016' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2017' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2018' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2019' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2020' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2021' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2022' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1mps8k10j498li12qeon01qit4zu].[none:State:nk]</column>
+            <column>[federated.1mps8k10j498li12qeon01qit4zu].[yr:DateLastContact:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.1mps8k10j498li12qeon01qit4zu].[yr:DateLastContact:ok]' />
+            </encodings>
+            <reference-line axis-column='[federated.1mps8k10j498li12qeon01qit4zu].[cnt:CaseNumber:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1mps8k10j498li12qeon01qit4zu].[cnt:CaseNumber:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1mps8k10j498li12qeon01qit4zu].[cnt:CaseNumber:qk]</rows>
+        <cols>[federated.1mps8k10j498li12qeon01qit4zu].[none:State:nk]</cols>
+      </table>
+      <simple-id uuid='{CD27C400-DF6C-4F3D-ACA9-6B05F0FF57AE}' />
+    </worksheet>
+    <worksheet name='Histogram Missing Person Age'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Missing Person Age Categories</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='CapStoneData' name='federated.1mps8k10j498li12qeon01qit4zu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mps8k10j498li12qeon01qit4zu'>
+            <column datatype='integer' name='[Missing Age (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[MissingAge]' peg='0' size='7' />
+            </column>
+            <column aggregation='Count' caption='Missing Age' datatype='integer' datatype-customized='true' name='[MissingAge]' role='measure' type='quantitative' />
+            <column-instance column='[MissingAge]' derivation='Count' name='[cnt:MissingAge:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Missing Age (bin)]' derivation='None' name='[none:Missing Age (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1mps8k10j498li12qeon01qit4zu].[none:Missing Age (bin):qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.1mps8k10j498li12qeon01qit4zu].[none:Missing Age (bin):qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.1mps8k10j498li12qeon01qit4zu].[cnt:MissingAge:qk]</rows>
+        <cols>[federated.1mps8k10j498li12qeon01qit4zu].[none:Missing Age (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.1mps8k10j498li12qeon01qit4zu].[none:Missing Age (bin):qk]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{6E4D228B-7DB3-40F7-88FA-5E61F721BAE2}' />
+    </worksheet>
+    <worksheet name='Line Graph Female Missing Persons'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Male &amp; Female Missing Persons (2000-2020)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='CapStoneData' name='federated.1mps8k10j498li12qeon01qit4zu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mps8k10j498li12qeon01qit4zu'>
+            <column caption='Case Number' datatype='string' name='[CaseNumber]' role='dimension' type='nominal' />
+            <column caption='Date Last Contact' datatype='date' name='[DateLastContact]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Sex]' role='dimension' type='nominal' />
+            <column-instance column='[CaseNumber]' derivation='Count' name='[cnt:CaseNumber:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sex]' derivation='None' name='[none:Sex:nk]' pivot='key' type='nominal' />
+            <column-instance column='[DateLastContact]' derivation='Year-Trunc' name='[tyr:DateLastContact:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mps8k10j498li12qeon01qit4zu].[none:Sex:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Sex:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Sex:nk]' member='&quot;Other&quot;' />
+                <groupfilter function='member' level='[none:Sex:nk]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1mps8k10j498li12qeon01qit4zu].[tyr:DateLastContact:qk]' included-values='in-range'>
+            <min>#2000-01-01 00:00:00#</min>
+            <max>#2020-01-01 00:00:00#</max>
+          </filter>
+          <slices>
+            <column>[federated.1mps8k10j498li12qeon01qit4zu].[none:Sex:nk]</column>
+            <column>[federated.1mps8k10j498li12qeon01qit4zu].[tyr:DateLastContact:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1mps8k10j498li12qeon01qit4zu].[cnt:CaseNumber:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1mps8k10j498li12qeon01qit4zu].[none:Sex:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1mps8k10j498li12qeon01qit4zu].[cnt:CaseNumber:qk]</rows>
+        <cols>[federated.1mps8k10j498li12qeon01qit4zu].[tyr:DateLastContact:qk]</cols>
+      </table>
+      <simple-id uuid='{D30F07D3-F822-495D-ACB6-7138945A3680}' />
+    </worksheet>
+    <worksheet name='Missing Males By Age Group'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Male Missing Persons By Age Group</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='CapStoneData' name='federated.1mps8k10j498li12qeon01qit4zu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mps8k10j498li12qeon01qit4zu'>
+            <column caption='Case Number' datatype='string' name='[CaseNumber]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Missing Age (group)]' role='dimension' type='ordinal'>
+              <calculation class='categorical-bin' column='[MissingAge]' new-bin='true'>
+                <bin default-name='false' value='&quot;1-18&quot;'>
+                  <value>1</value>
+                  <value>2</value>
+                  <value>3</value>
+                  <value>4</value>
+                  <value>5</value>
+                  <value>6</value>
+                  <value>7</value>
+                  <value>8</value>
+                  <value>9</value>
+                  <value>10</value>
+                  <value>11</value>
+                  <value>12</value>
+                  <value>13</value>
+                  <value>14</value>
+                  <value>15</value>
+                  <value>16</value>
+                  <value>17</value>
+                  <value>18</value>
+                </bin>
+                <bin default-name='false' value='&quot;100-116&quot;'>
+                  <value>114</value>
+                  <value>116</value>
+                </bin>
+                <bin default-name='false' value='&quot;19-29&quot;'>
+                  <value>19</value>
+                  <value>20</value>
+                  <value>21</value>
+                  <value>22</value>
+                  <value>23</value>
+                  <value>24</value>
+                  <value>25</value>
+                  <value>26</value>
+                  <value>27</value>
+                  <value>28</value>
+                  <value>29</value>
+                </bin>
+                <bin default-name='false' value='&quot;30-39&quot;'>
+                  <value>30</value>
+                  <value>31</value>
+                  <value>32</value>
+                  <value>33</value>
+                  <value>34</value>
+                  <value>35</value>
+                  <value>36</value>
+                  <value>37</value>
+                  <value>38</value>
+                  <value>39</value>
+                </bin>
+                <bin default-name='false' value='&quot;40-49&quot;'>
+                  <value>40</value>
+                  <value>41</value>
+                  <value>42</value>
+                  <value>43</value>
+                  <value>44</value>
+                  <value>45</value>
+                  <value>46</value>
+                  <value>47</value>
+                  <value>48</value>
+                  <value>49</value>
+                </bin>
+                <bin default-name='false' value='&quot;50-59&quot;'>
+                  <value>50</value>
+                  <value>51</value>
+                  <value>52</value>
+                  <value>53</value>
+                  <value>54</value>
+                  <value>55</value>
+                  <value>56</value>
+                  <value>57</value>
+                  <value>58</value>
+                  <value>59</value>
+                </bin>
+                <bin default-name='false' value='&quot;60-69&quot;'>
+                  <value>60</value>
+                  <value>61</value>
+                  <value>62</value>
+                  <value>63</value>
+                  <value>64</value>
+                  <value>65</value>
+                  <value>66</value>
+                  <value>67</value>
+                  <value>68</value>
+                  <value>69</value>
+                </bin>
+                <bin default-name='false' value='&quot;70-79&quot;'>
+                  <value>70</value>
+                  <value>71</value>
+                  <value>72</value>
+                  <value>73</value>
+                  <value>74</value>
+                  <value>75</value>
+                  <value>76</value>
+                  <value>77</value>
+                  <value>78</value>
+                  <value>79</value>
+                </bin>
+                <bin default-name='false' value='&quot;80-89&quot;'>
+                  <value>80</value>
+                  <value>81</value>
+                  <value>82</value>
+                  <value>83</value>
+                  <value>84</value>
+                  <value>85</value>
+                  <value>86</value>
+                  <value>87</value>
+                  <value>88</value>
+                  <value>89</value>
+                </bin>
+                <bin default-name='false' value='&quot;90-99&quot;'>
+                  <value>90</value>
+                  <value>91</value>
+                  <value>92</value>
+                  <value>93</value>
+                  <value>94</value>
+                  <value>95</value>
+                  <value>96</value>
+                  <value>98</value>
+                  <value>99</value>
+                </bin>
+              </calculation>
+            </column>
+            <column aggregation='Count' caption='Missing Age' datatype='integer' datatype-customized='true' name='[MissingAge]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Sex]' role='dimension' type='nominal' />
+            <column-instance column='[CaseNumber]' derivation='Count' name='[cnt:CaseNumber:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sex]' derivation='None' name='[none:Sex:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mps8k10j498li12qeon01qit4zu].[Missing Age (group)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Missing Age (group)]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[Missing Age (group)]' member='%null%' />
+                <groupfilter function='member' level='[Missing Age (group)]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1mps8k10j498li12qeon01qit4zu].[none:Sex:nk]'>
+            <groupfilter function='member' level='[none:Sex:nk]' member='&quot;M&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1mps8k10j498li12qeon01qit4zu].[none:Sex:nk]</column>
+            <column>[federated.1mps8k10j498li12qeon01qit4zu].[Missing Age (group)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1mps8k10j498li12qeon01qit4zu].[Missing Age (group)]' />
+              <lod column='[federated.1mps8k10j498li12qeon01qit4zu].[none:Sex:nk]' />
+              <size column='[federated.1mps8k10j498li12qeon01qit4zu].[cnt:CaseNumber:qk]' />
+              <text column='[federated.1mps8k10j498li12qeon01qit4zu].[Missing Age (group)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CB358ED4-7026-4CB8-A782-7FBD196E40BC}' />
+    </worksheet>
+    <worksheet name='Missing Person 2020 State View'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Missing Persons Cases By Location 2022</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='CapStoneData' name='federated.1mps8k10j498li12qeon01qit4zu' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1mps8k10j498li12qeon01qit4zu'>
+            <column caption='Case Number' datatype='string' name='[CaseNumber]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Year Last Contact' datatype='string' name='[YearLastContact]' role='dimension' type='nominal' />
+            <column-instance column='[CaseNumber]' derivation='Count' name='[cnt:CaseNumber:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[YearLastContact]' derivation='None' name='[none:YearLastContact:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mps8k10j498li12qeon01qit4zu].[none:YearLastContact:nk]'>
+            <groupfilter function='member' level='[none:YearLastContact:nk]' member='&quot;2020&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1mps8k10j498li12qeon01qit4zu].[none:YearLastContact:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1mps8k10j498li12qeon01qit4zu].[Longitude (generated)]' field-type='quantitative' max='-4322814.2956149131' min='-20178352.64274234' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1mps8k10j498li12qeon01qit4zu].[Latitude (generated)]' field-type='quantitative' max='10308720.256318588' min='-280413.59286572813' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1mps8k10j498li12qeon01qit4zu].[cnt:CaseNumber:qk]' palette='red_10_0' type='interpolated' />
+            <encoding attr='size' field='[federated.1mps8k10j498li12qeon01qit4zu].[cnt:CaseNumber:qk]' field-type='quantitative' max-size='1' min-size='0' type='rangesize' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1mps8k10j498li12qeon01qit4zu].[none:State:nk]' />
+              <size column='[federated.1mps8k10j498li12qeon01qit4zu].[cnt:CaseNumber:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ff9d9a' />
+                <format attr='size' value='0.9538148045539856' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1mps8k10j498li12qeon01qit4zu].[none:YearLastContact:nk] * [federated.1mps8k10j498li12qeon01qit4zu].[Latitude (generated)])</rows>
+        <cols>[federated.1mps8k10j498li12qeon01qit4zu].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{7AEC629D-674E-4012-98B6-EADBE6384E66}' />
+    </worksheet>
+    <worksheet name='Missing Persons By City California'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Missing Persons Reported In California Per City (2000-Present)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='CapStoneData' name='federated.1mps8k10j498li12qeon01qit4zu' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1mps8k10j498li12qeon01qit4zu'>
+            <column caption='Case Number' datatype='string' name='[CaseNumber]' role='dimension' type='nominal' />
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column caption='Date Last Contact' datatype='date' name='[DateLastContact]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[CaseNumber]' derivation='Count' name='[cnt:CaseNumber:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[DateLastContact]' derivation='Year' name='[yr:DateLastContact:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1mps8k10j498li12qeon01qit4zu].[Longitude (generated)]' included-values='non-null' />
+          <filter class='categorical' column='[federated.1mps8k10j498li12qeon01qit4zu].[none:City:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:City:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:City:nk]' member='&quot;Pacific Beach&quot;' />
+                <groupfilter function='member' level='[none:City:nk]' member='&quot;San Luis&quot;' />
+                <groupfilter function='member' level='[none:City:nk]' member='&quot;Yosemite&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1mps8k10j498li12qeon01qit4zu].[none:State:nk]'>
+            <groupfilter function='member' level='[none:State:nk]' member='&quot;CA&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1mps8k10j498li12qeon01qit4zu].[yr:DateLastContact:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2000' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2001' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2002' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2003' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2004' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2005' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2006' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2007' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2008' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2009' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2010' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2011' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2012' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2013' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2014' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2015' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2016' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2017' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2018' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2019' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2020' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2021' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2022' />
+              <groupfilter function='member' level='[yr:DateLastContact:ok]' member='2023' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1mps8k10j498li12qeon01qit4zu].[none:State:nk]</column>
+            <column>[federated.1mps8k10j498li12qeon01qit4zu].[Longitude (generated)]</column>
+            <column>[federated.1mps8k10j498li12qeon01qit4zu].[yr:DateLastContact:ok]</column>
+            <column>[federated.1mps8k10j498li12qeon01qit4zu].[none:City:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1mps8k10j498li12qeon01qit4zu].[Longitude (generated)]' field-type='quantitative' max='28084838.863623537' min='25678429.521280061' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1mps8k10j498li12qeon01qit4zu].[Latitude (generated)]' field-type='quantitative' max='5145417.2714432357' min='3796551.048445133' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1mps8k10j498li12qeon01qit4zu].[cnt:CaseNumber:qk]' num-steps='183' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.1mps8k10j498li12qeon01qit4zu].[none:City:nk]' value='false' />
+            <format attr='break-on-special' field='[federated.1mps8k10j498li12qeon01qit4zu].[none:City:nk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.1mps8k10j498li12qeon01qit4zu].[none:City:nk]' value='false' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='parks' value='false' />
+            <format attr='enabled' id='landcover_wood' value='false' />
+            <format attr='enabled' id='landcover_scrub' value='false' />
+            <format attr='enabled' id='landcover_grass' value='false' />
+            <format attr='enabled' id='landcover_crop' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-bg' value='false' />
+            <format attr='enabled' id='admin-0-boundaries' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-dispute' value='false' />
+            <format attr='enabled' id='admin-0-label-5th-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-4th-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-3rd-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-2nd-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-1st-tier' value='false' />
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+            <format attr='enabled' id='background' value='false' />
+            <format attr='enabled' id='barrier_line-land-polygon' value='false' />
+            <format attr='enabled' id='barrier_line-land-line' value='false' />
+            <format attr='enabled' id='national_park-stroke' value='false' />
+            <format attr='enabled' id='national_park' value='false' />
+            <format attr='enabled' id='parks-stroke' value='false' />
+            <format attr='enabled' id='pitch' value='false' />
+            <format attr='enabled' id='industrial' value='false' />
+            <format attr='enabled' id='built-up-area' value='false' />
+            <format attr='enabled' id='water' value='false' />
+            <format attr='enabled' id='waterway-river-canal' value='false' />
+            <format attr='enabled' id='aeroway-polygon' value='false' />
+            <format attr='enabled' id='aeroway-runway' value='false' />
+            <format attr='enabled' id='aeroway-taxiway' value='false' />
+            <format attr='enabled' id='admin-1-label-9th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-8th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-7th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-6th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-5th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-4th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-3rd-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-2nd-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-1st-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-3rd-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-2nd-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-1st-tier' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-bg-sub' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-supress-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-sm-parents-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-md-parents-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-lg-parents-bg' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-dispute-sub' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-sub' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-supress' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-sm-parents' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-md-parents' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-lg-parents' value='false' />
+            <format attr='enabled' id='admin1-water-lines-usa-tableau' value='false' />
+            <format attr='enabled' id='9-dash-line-casing' value='false' />
+            <format attr='enabled' id='9-dash-line' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='normal' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes _.fcp.Layers.true...customization-axis='layer'>
+          <_.fcp.Layers.true...pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </_.fcp.Layers.true...pane>
+          <pane _.fcp.Layers.true...title='Missing Person by State' id='0' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <lod column='[federated.1mps8k10j498li12qeon01qit4zu].[none:State:nk]' />
+              <geometry column='[federated.1mps8k10j498li12qeon01qit4zu].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#a7acad' />
+              </style-rule>
+            </style>
+          </pane>
+          <_.fcp.Layers.true...pane id='2' selection-relaxation-option='selection-relaxation-allow' title='Missing Person by City'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1mps8k10j498li12qeon01qit4zu].[none:City:nk]' />
+              <color column='[federated.1mps8k10j498li12qeon01qit4zu].[cnt:CaseNumber:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='255' />
+                <format attr='mark-color' value='#606b76' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </_.fcp.Layers.true...pane>
+        </panes>
+        <rows>[federated.1mps8k10j498li12qeon01qit4zu].[Latitude (generated)]</rows>
+        <cols>[federated.1mps8k10j498li12qeon01qit4zu].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{8B415A93-A314-4BF7-9EC6-8ABB59C98382}' />
+    </worksheet>
+    <worksheet name='Pie Chart Of Missing Females By Age Group'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Female Missing Persons Cases By Age Group</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='CapStoneData' name='federated.1mps8k10j498li12qeon01qit4zu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mps8k10j498li12qeon01qit4zu'>
+            <column caption='Case Number' datatype='string' name='[CaseNumber]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Missing Age (group)]' role='dimension' type='ordinal'>
+              <calculation class='categorical-bin' column='[MissingAge]' new-bin='true'>
+                <bin default-name='false' value='&quot;1-18&quot;'>
+                  <value>1</value>
+                  <value>2</value>
+                  <value>3</value>
+                  <value>4</value>
+                  <value>5</value>
+                  <value>6</value>
+                  <value>7</value>
+                  <value>8</value>
+                  <value>9</value>
+                  <value>10</value>
+                  <value>11</value>
+                  <value>12</value>
+                  <value>13</value>
+                  <value>14</value>
+                  <value>15</value>
+                  <value>16</value>
+                  <value>17</value>
+                  <value>18</value>
+                </bin>
+                <bin default-name='false' value='&quot;100-116&quot;'>
+                  <value>114</value>
+                  <value>116</value>
+                </bin>
+                <bin default-name='false' value='&quot;19-29&quot;'>
+                  <value>19</value>
+                  <value>20</value>
+                  <value>21</value>
+                  <value>22</value>
+                  <value>23</value>
+                  <value>24</value>
+                  <value>25</value>
+                  <value>26</value>
+                  <value>27</value>
+                  <value>28</value>
+                  <value>29</value>
+                </bin>
+                <bin default-name='false' value='&quot;30-39&quot;'>
+                  <value>30</value>
+                  <value>31</value>
+                  <value>32</value>
+                  <value>33</value>
+                  <value>34</value>
+                  <value>35</value>
+                  <value>36</value>
+                  <value>37</value>
+                  <value>38</value>
+                  <value>39</value>
+                </bin>
+                <bin default-name='false' value='&quot;40-49&quot;'>
+                  <value>40</value>
+                  <value>41</value>
+                  <value>42</value>
+                  <value>43</value>
+                  <value>44</value>
+                  <value>45</value>
+                  <value>46</value>
+                  <value>47</value>
+                  <value>48</value>
+                  <value>49</value>
+                </bin>
+                <bin default-name='false' value='&quot;50-59&quot;'>
+                  <value>50</value>
+                  <value>51</value>
+                  <value>52</value>
+                  <value>53</value>
+                  <value>54</value>
+                  <value>55</value>
+                  <value>56</value>
+                  <value>57</value>
+                  <value>58</value>
+                  <value>59</value>
+                </bin>
+                <bin default-name='false' value='&quot;60-69&quot;'>
+                  <value>60</value>
+                  <value>61</value>
+                  <value>62</value>
+                  <value>63</value>
+                  <value>64</value>
+                  <value>65</value>
+                  <value>66</value>
+                  <value>67</value>
+                  <value>68</value>
+                  <value>69</value>
+                </bin>
+                <bin default-name='false' value='&quot;70-79&quot;'>
+                  <value>70</value>
+                  <value>71</value>
+                  <value>72</value>
+                  <value>73</value>
+                  <value>74</value>
+                  <value>75</value>
+                  <value>76</value>
+                  <value>77</value>
+                  <value>78</value>
+                  <value>79</value>
+                </bin>
+                <bin default-name='false' value='&quot;80-89&quot;'>
+                  <value>80</value>
+                  <value>81</value>
+                  <value>82</value>
+                  <value>83</value>
+                  <value>84</value>
+                  <value>85</value>
+                  <value>86</value>
+                  <value>87</value>
+                  <value>88</value>
+                  <value>89</value>
+                </bin>
+                <bin default-name='false' value='&quot;90-99&quot;'>
+                  <value>90</value>
+                  <value>91</value>
+                  <value>92</value>
+                  <value>93</value>
+                  <value>94</value>
+                  <value>95</value>
+                  <value>96</value>
+                  <value>98</value>
+                  <value>99</value>
+                </bin>
+              </calculation>
+            </column>
+            <column aggregation='Count' caption='Missing Age' datatype='integer' datatype-customized='true' name='[MissingAge]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Sex]' role='dimension' type='nominal' />
+            <column-instance column='[CaseNumber]' derivation='Count' name='[cnt:CaseNumber:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sex]' derivation='None' name='[none:Sex:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mps8k10j498li12qeon01qit4zu].[Missing Age (group)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Missing Age (group)]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[Missing Age (group)]' member='%null%' />
+                <groupfilter function='member' level='[Missing Age (group)]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1mps8k10j498li12qeon01qit4zu].[none:Sex:nk]'>
+            <groupfilter function='member' level='[none:Sex:nk]' member='&quot;F&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1mps8k10j498li12qeon01qit4zu].[none:Sex:nk]</column>
+            <column>[federated.1mps8k10j498li12qeon01qit4zu].[Missing Age (group)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='752' />
+            <format attr='cell-h' value='752' />
+            <format attr='cell' value='94' />
+            <format attr='cell-q' value='470' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1mps8k10j498li12qeon01qit4zu].[none:Sex:nk]' value='36' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.1mps8k10j498li12qeon01qit4zu].[Missing Age (group)]' />
+              <wedge-size column='[federated.1mps8k10j498li12qeon01qit4zu].[cnt:CaseNumber:qk]' />
+              <size column='[federated.1mps8k10j498li12qeon01qit4zu].[cnt:CaseNumber:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1mps8k10j498li12qeon01qit4zu].[none:Sex:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{99E2FEE4-8ED7-4D32-A5BB-50D79FEC8F64}' />
+    </worksheet>
+    <worksheet name='Scatter Plot of Unclaimed/Unidentified Person Cases'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Unidentified and Unclaimed Persons (2000-2022)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='CapStoneData' name='federated.1mps8k10j498li12qeon01qit4zu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mps8k10j498li12qeon01qit4zu'>
+            <column caption='YearBodyFound (US Unidentified Persons)' datatype='string' name='[YearBodyFound (US_Unidentified_Persons)]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='US_Unclaimed_Persons' datatype='integer' name='[__tableau_internal_object_id__].[US_Unclaimed_Persons_EA24A8047D5043E18D4F1C886BF5A2F8]' role='measure' type='quantitative' />
+            <column caption='Year Body Found' datatype='string' name='[YearBodyFound]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='US_Unidentified_Persons' datatype='integer' name='[__tableau_internal_object_id__].[US_Unidentified_Persons_48C44F1C4DCD4FCC8F8255F8262B9376]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='US_Unclaimed_Persons' datatype='table' name='[__tableau_internal_object_id__].[US_Unclaimed_Persons_EA24A8047D5043E18D4F1C886BF5A2F8]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='US_Unidentified_Persons' datatype='table' name='[__tableau_internal_object_id__].[US_Unidentified_Persons_48C44F1C4DCD4FCC8F8255F8262B9376]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[US_Unclaimed_Persons_EA24A8047D5043E18D4F1C886BF5A2F8]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:US_Unclaimed_Persons_EA24A8047D5043E18D4F1C886BF5A2F8:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[US_Unidentified_Persons_48C44F1C4DCD4FCC8F8255F8262B9376]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:US_Unidentified_Persons_48C44F1C4DCD4FCC8F8255F8262B9376:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[YearBodyFound (US_Unidentified_Persons)]' derivation='None' name='[none:YearBodyFound (US_Unidentified_Persons):nk]' pivot='key' type='nominal' />
+            <column-instance column='[YearBodyFound]' derivation='None' name='[none:YearBodyFound:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mps8k10j498li12qeon01qit4zu].[none:YearBodyFound:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:YearBodyFound:nk]' member='&quot;2000&quot;' />
+              <groupfilter function='member' level='[none:YearBodyFound:nk]' member='&quot;2001&quot;' />
+              <groupfilter function='member' level='[none:YearBodyFound:nk]' member='&quot;2002&quot;' />
+              <groupfilter function='member' level='[none:YearBodyFound:nk]' member='&quot;2003&quot;' />
+              <groupfilter function='member' level='[none:YearBodyFound:nk]' member='&quot;2004&quot;' />
+              <groupfilter function='member' level='[none:YearBodyFound:nk]' member='&quot;2005&quot;' />
+              <groupfilter function='member' level='[none:YearBodyFound:nk]' member='&quot;2006&quot;' />
+              <groupfilter function='member' level='[none:YearBodyFound:nk]' member='&quot;2007&quot;' />
+              <groupfilter function='member' level='[none:YearBodyFound:nk]' member='&quot;2008&quot;' />
+              <groupfilter function='member' level='[none:YearBodyFound:nk]' member='&quot;2009&quot;' />
+              <groupfilter function='member' level='[none:YearBodyFound:nk]' member='&quot;2010&quot;' />
+              <groupfilter function='member' level='[none:YearBodyFound:nk]' member='&quot;2011&quot;' />
+              <groupfilter function='member' level='[none:YearBodyFound:nk]' member='&quot;2012&quot;' />
+              <groupfilter function='member' level='[none:YearBodyFound:nk]' member='&quot;2013&quot;' />
+              <groupfilter function='member' level='[none:YearBodyFound:nk]' member='&quot;2014&quot;' />
+              <groupfilter function='member' level='[none:YearBodyFound:nk]' member='&quot;2015&quot;' />
+              <groupfilter function='member' level='[none:YearBodyFound:nk]' member='&quot;2016&quot;' />
+              <groupfilter function='member' level='[none:YearBodyFound:nk]' member='&quot;2017&quot;' />
+              <groupfilter function='member' level='[none:YearBodyFound:nk]' member='&quot;2018&quot;' />
+              <groupfilter function='member' level='[none:YearBodyFound:nk]' member='&quot;2019&quot;' />
+              <groupfilter function='member' level='[none:YearBodyFound:nk]' member='&quot;2020&quot;' />
+              <groupfilter function='member' level='[none:YearBodyFound:nk]' member='&quot;2021&quot;' />
+              <groupfilter function='member' level='[none:YearBodyFound:nk]' member='&quot;2022&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1mps8k10j498li12qeon01qit4zu].[none:YearBodyFound:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1mps8k10j498li12qeon01qit4zu].[none:YearBodyFound (US_Unidentified_Persons):nk]' />
+              <lod column='[federated.1mps8k10j498li12qeon01qit4zu].[none:YearBodyFound:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1mps8k10j498li12qeon01qit4zu].[__tableau_internal_object_id__].[cnt:US_Unidentified_Persons_48C44F1C4DCD4FCC8F8255F8262B9376:qk]</rows>
+        <cols>[federated.1mps8k10j498li12qeon01qit4zu].[__tableau_internal_object_id__].[cnt:US_Unclaimed_Persons_EA24A8047D5043E18D4F1C886BF5A2F8:qk]</cols>
+      </table>
+      <simple-id uuid='{60ABBC55-6DD0-49CD-9C7B-7F15481AD458}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Missing Person 2020 State View'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1mps8k10j498li12qeon01qit4zu].[cnt:CaseNumber:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5FB39C60-2DF5-4D35-B377-B92EC5E9E280}' />
+    </window>
+    <window class='worksheet' name='All Missing Person Case Heat Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1mps8k10j498li12qeon01qit4zu].[cnt:CaseNumber:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{03C52E10-670D-40A7-A541-EEE41F66A4FA}' />
+    </window>
+    <window class='worksheet' name='Scatter Plot of Unclaimed/Unidentified Person Cases'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='96'>
+            <card type='caption' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{320355FB-4063-42A3-BADA-415C7CF1B6BC}' />
+    </window>
+    <window class='worksheet' name='Bar Chart Total Male Missing Person Cases By State'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{216AB33F-7642-4DEA-9E44-03709524EB1D}' />
+    </window>
+    <window class='worksheet' name='Box Whisker chart of States with Highest Reported Missing Person Cases'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{AFDAB5A8-DCE2-4F29-9808-0D6A78100A19}' />
+    </window>
+    <window class='worksheet' name='Pie Chart Of Missing Females By Age Group'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1mps8k10j498li12qeon01qit4zu].[Missing Age (group)]' type='color' />
+            <card pane-specification-id='0' param='[federated.1mps8k10j498li12qeon01qit4zu].[cnt:CaseNumber:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B522F161-8D34-4EFF-8D83-E0BB03E6BFB7}' />
+    </window>
+    <window class='worksheet' name='Missing Males By Age Group'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1mps8k10j498li12qeon01qit4zu].[Missing Age (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7A23B295-A492-4211-96A3-778715B1F137}' />
+    </window>
+    <window class='worksheet' name='Line Graph Female Missing Persons'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1mps8k10j498li12qeon01qit4zu].[none:Sex:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8ACDDA0A-B862-452F-9E37-1D544D4E8318}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Histogram Missing Person Age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A7F5280B-6281-4FB2-9FDD-662FD1733023}' />
+    </window>
+    <window class='worksheet' name='Missing Persons By City California'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+            <card pane-specification-id='2' param='[federated.1mps8k10j498li12qeon01qit4zu].[cnt:CaseNumber:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{F48B53EA-5C17-4D11-A64B-F864A12D44DE}' />
+    </window>
+  </windows>
+</workbook>
